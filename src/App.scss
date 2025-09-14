@@ -17,6 +17,10 @@ header {
     padding: 0.5rem;
     justify-content: space-between;
 
+    h2 {
+        padding-left: 2rem;
+    }
+
     img {
         height: 3rem;
         width: 3rem;
@@ -31,7 +35,7 @@ section {
     height: calc(100% - 4rem);
 }
 
-.links-folder {
+.folder {
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -55,10 +59,20 @@ section {
         }
     }
 
-    & > .links-wrapper {
+    & > .list-wrapper {
         display: grid;
         grid-template-rows: 0fr;
         transition: all 0.5s ease;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            left: 0.5rem;
+            top: 0.5rem;
+            content: "";
+            height: calc(100% - 1rem);
+            border-left: #eeeeee solid 1px;
+        }
 
         & > .item-list {
             padding-top: 0;
@@ -69,7 +83,7 @@ section {
         transform: rotate(90deg);
     }
 
-    &.open > .links-wrapper {
+    &.open > .list-wrapper {
         grid-template-rows: 1fr;
 
         & > .item-list {
@@ -84,7 +98,7 @@ section {
     gap: 0.5rem;
     overflow-y: hidden;
     padding-top: 0.5rem;
-    padding-left: 0.5rem;
+    padding-left: 1rem;
     transition: padding-top 0.4s ease-out;
 
     &.no-padding {
@@ -99,6 +113,7 @@ section {
             display: flex;
             align-items: center;
             gap: 0.5rem;
+            color: #213547;
 
             img.icon {
                 height: 2rem;

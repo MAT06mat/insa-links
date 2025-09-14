@@ -6,7 +6,7 @@ function LinksFolder({ text, list }: LinksFolderProps) {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className={"links-folder" + (isOpen ? " open" : "")}>
+        <div className={"folder" + (isOpen ? " open" : "")}>
             <button
                 className="dropdown"
                 onClick={() => setIsOpen((prev) => !prev)}
@@ -14,7 +14,7 @@ function LinksFolder({ text, list }: LinksFolderProps) {
                 <span>{text}</span>
                 <img className="chevron" src="/chevron-right.svg" />
             </button>
-            <div className="links-wrapper">
+            <div className="list-wrapper">
                 <ItemList list={list} />
             </div>
         </div>

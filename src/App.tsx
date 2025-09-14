@@ -38,9 +38,9 @@ function App() {
     const list: ItemProps[] = [
         folderProps,
         folderProps,
+        { type: "folder", text: "AA", list: [folderProps, ...links] },
         links[1],
         links[3],
-        { type: "folder", text: "AA", list: [folderProps, ...links] },
     ];
 
     return (
