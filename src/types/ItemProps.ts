@@ -1,4 +1,4 @@
 import type { LinkProps } from "./LinkProps";
-import type { LinksFolderProps } from "./LinksFolderProps";
+import type { FolderProps } from "./FolderProps";
 
-export type ItemProps = LinksFolderProps | LinkProps;
+export type ItemProps = FolderProps | LinkProps;

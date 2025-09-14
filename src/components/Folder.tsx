@@ -1,8 +1,8 @@
 import { useState } from "react";
-import type { LinksFolderProps } from "../types/LinksFolderProps";
+import type { FolderProps } from "../types/FolderProps";
 import ItemList from "./ItemList";
 
-function LinksFolder({ text, list }: LinksFolderProps) {
+function Folder({ text, list }: FolderProps) {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
@@ -21,4 +21,4 @@ function LinksFolder({ text, list }: LinksFolderProps) {
     );
 }
 
-export default LinksFolder;
+export default Folder;

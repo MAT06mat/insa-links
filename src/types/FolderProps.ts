@@ -1,6 +1,6 @@
 import type { ItemProps } from "./ItemProps";
 
-export type LinksFolderProps = {
+export type FolderProps = {
     type: "folder";
     text: string;
     list: ItemProps[];

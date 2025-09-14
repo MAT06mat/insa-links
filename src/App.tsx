@@ -1,6 +1,6 @@
 import "./App.scss";
 import type { LinkProps } from "./types/LinkProps";
-import type { LinksFolderProps } from "./types/LinksFolderProps";
+import type { FolderProps } from "./types/FolderProps";
 import type { ItemProps } from "./types/ItemProps";
 import ItemList from "./components/ItemList";
 
@@ -29,7 +29,7 @@ function App() {
         },
     ];
 
-    const folderProps: LinksFolderProps = {
+    const folderProps: FolderProps = {
         type: "folder",
         text: "Mon folder",
         list: links,
