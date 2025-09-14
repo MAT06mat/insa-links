@@ -46,7 +46,7 @@ function App() {
     return (
         <>
             <header>
-                <h2>Fastlinks</h2>
+                <h2>INSA links</h2>
                 <img src="/icon.svg" alt="Falstlink icon" />
             </header>
             <section>
