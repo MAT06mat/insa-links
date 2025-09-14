@@ -1,14 +1,110 @@
 #root {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 2rem;
+    width: 100%;
+    height: 100svh;
+    margin: 0;
+    padding: 0;
     text-align: center;
 }
 
-ul {
+header {
+    box-sizing: border-box;
+    width: 100%;
+    height: 4rem;
+    background-color: #213547;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 0.5rem;
+    justify-content: space-between;
+
+    img {
+        height: 3rem;
+        width: 3rem;
+    }
+}
+
+section {
+    box-sizing: border-box;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    height: calc(100% - 4rem);
+}
+
+.links-folder {
     padding: 0;
-    li {
+    display: flex;
+    flex-direction: column;
+
+    & > .dropdown {
+        padding: 0.5rem 1rem;
+        background-color: #21354710;
+        border-radius: 0.5rem;
+        text-align: start;
+        font-weight: 400;
+        border: 1px solid #21354750;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .chevron {
+            padding-top: 0.1rem;
+            width: 1rem;
+            height: 1rem;
+            transition: transform 0.2s ease-out;
+        }
+    }
+
+    & > .links-wrapper {
+        display: grid;
+        grid-template-rows: 0fr;
+        transition: all 0.5s ease;
+
+        & > .item-list {
+            padding-top: 0;
+        }
+    }
+
+    &.open > .dropdown .chevron {
+        transform: rotate(90deg);
+    }
+
+    &.open > .links-wrapper {
+        grid-template-rows: 1fr;
+
+        & > .item-list {
+            padding-top: 0.5rem;
+        }
+    }
+}
+
+.item-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    overflow-y: hidden;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    transition: padding-top 0.4s ease-out;
+
+    &.no-padding {
+        padding: 0;
+    }
+
+    .link {
         list-style: none;
+
+        a {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+
+            img.icon {
+                height: 2rem;
+                width: 2rem;
+            }
+        }
     }
 }
 
