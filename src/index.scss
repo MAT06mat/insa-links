@@ -6,6 +6,9 @@
     color: #213547;
     background-color: #ffffff;
 
+    height: 100svh;
+    width: 100%;
+
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -26,8 +29,9 @@ body {
     margin: 0;
     display: flex;
     place-items: center;
+    height: 100svh;
+    width: 100%;
     min-width: 320px;
-    min-height: 100vh;
 }
 
 h1 {
