@@ -7,7 +7,7 @@ function App() {
         <>
             <header>
                 <h2>INSA links</h2>
-                <img src="/icon.svg" alt="Falstlink icon" />
+                <img src="./icon.svg" alt="Falstlink icon" />
             </header>
             <section>
                 <ItemList list={LinksList} noPadding />
