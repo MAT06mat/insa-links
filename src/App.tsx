@@ -13,7 +13,10 @@ function App() {
                 <ItemList list={LinksList} noPadding />
             </section>
             <footer>
-                Site par <a href="github.com/mat06mat">MAT06mat</a>
+                Site par{" "}
+                <a href="https://github.com/mat06mat" target="_blank">
+                    MAT06mat
+                </a>
             </footer>
         </>
     );
