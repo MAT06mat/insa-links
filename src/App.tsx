@@ -1,48 +1,8 @@
-import "./App.scss";
-import type { LinkProps } from "./types/LinkProps";
-import type { FolderProps } from "./types/FolderProps";
-import type { ItemProps } from "./types/ItemProps";
 import ItemList from "./components/ItemList";
+import { LinksList } from "./assets/LinksList";
+import "./App.scss";
 
 function App() {
-    const links: LinkProps[] = [
-        {
-            type: "link",
-            text: "1er link",
-            url: "https://moodle.com",
-        },
-        {
-            type: "link",
-            text: "2ème link",
-            url: "https://moodle.insa-lyon.fr",
-            icon: "https://moodle.com",
-        },
-        {
-            type: "link",
-            text: "3ème link",
-            url: "https://google.com",
-        },
-        {
-            type: "link",
-            text: "dernier link",
-            url: "https://google.com",
-        },
-    ];
-
-    const folderProps: FolderProps = {
-        type: "folder",
-        text: "Mon folder",
-        list: links,
-    };
-
-    const list: ItemProps[] = [
-        folderProps,
-        folderProps,
-        { type: "folder", text: "AA", list: [folderProps, ...links] },
-        links[1],
-        links[3],
-    ];
-
     return (
         <>
             <header>
@@ -50,8 +10,11 @@ function App() {
                 <img src="/icon.svg" alt="Falstlink icon" />
             </header>
             <section>
-                <ItemList list={list} noPadding />
+                <ItemList list={LinksList} noPadding />
             </section>
+            <footer>
+                Site par <a href="github.com/mat06mat">MAT06mat</a>
+            </footer>
         </>
     );
 }
