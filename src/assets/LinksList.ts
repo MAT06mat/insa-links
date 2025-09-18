@@ -2,16 +2,40 @@ import type { ItemProps } from "../types/ItemProps";
 
 export const LinksList: ItemProps[] = [
     {
+        type: "folder",
+        text: "Intranets",
+        list: [
+            {
+                type: "link",
+                text: "Intranet global",
+                url: "https://intranet.insa-lyon.fr/",
+                icon: "https://www.insa-lyon.fr/",
+            },
+            {
+                type: "link",
+                text: "Intranet FIMI",
+                url: "https://intranetfimi.insa-lyon.fr",
+                icon: "https://www.insa-lyon.fr/",
+            },
+            {
+                type: "link",
+                text: "Intranet biosciences",
+                url: "https://intranetbs.insa-lyon.fr/",
+                icon: "https://www.insa-lyon.fr/",
+            },
+            {
+                type: "link",
+                text: "Intranet centre des humanités",
+                url: "https://intranethumas.insa-lyon.fr",
+                icon: "https://www.insa-lyon.fr/",
+            },
+        ],
+    },
+    {
         type: "link",
         text: "Moodle",
         url: "https://moodle.insa-lyon.fr/",
         icon: "https://moodle.com",
-    },
-    {
-        type: "link",
-        text: "Intranet",
-        url: "https://intranet.insa-lyon.fr/",
-        icon: "https://www.insa-lyon.fr/",
     },
     {
         type: "link",
@@ -20,14 +44,14 @@ export const LinksList: ItemProps[] = [
     },
     {
         type: "link",
-        text: "Support technique",
-        url: "https://planete.insa-lyon.fr/",
-        icon: "https://www.insa-lyon.fr/",
+        text: "Mails INSA",
+        url: "https://zmail.insa-lyon.fr/",
     },
     {
         type: "link",
-        text: "Mails INSA",
-        url: "https://zmail.insa-lyon.fr/",
+        text: "Support technique",
+        url: "https://planete.insa-lyon.fr/",
+        icon: "https://www.insa-lyon.fr/",
     },
     {
         type: "link",
@@ -38,11 +62,6 @@ export const LinksList: ItemProps[] = [
         type: "link",
         text: "Mon dossier web",
         url: "https://mondossierweb.insa-lyon.fr",
-    },
-    {
-        type: "link",
-        text: "Intranet FIMI",
-        url: "https://intranetfimi.insa-lyon.fr",
     },
     {
         type: "link",
@@ -58,6 +77,7 @@ export const LinksList: ItemProps[] = [
         type: "link",
         text: "Bibliothèque INSA Lyon",
         url: "https://bibliotheque.insa-lyon.fr/",
+        icon: "https://www.insa-lyon.fr/",
     },
     {
         type: "link",

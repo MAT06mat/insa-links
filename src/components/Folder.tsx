@@ -12,7 +12,7 @@ function Folder({ text, list }: FolderProps) {
                 onClick={() => setIsOpen((prev) => !prev)}
             >
                 <span>{text}</span>
-                <img className="chevron" src="/chevron-right.svg" />
+                <img className="chevron" src="./chevron-right.svg" />
             </button>
             <div className="list-wrapper">
                 <ItemList list={list} />
