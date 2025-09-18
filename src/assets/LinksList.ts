@@ -37,19 +37,13 @@ export const LinksList: ItemProps[] = [
         list: [
             {
                 type: "link",
-                text: "Support technique (Planète INSA)",
-                url: "https://planete.insa-lyon.fr/",
-                icon: "https://www.insa-lyon.fr/",
-            },
-            {
-                type: "link",
                 text: "Tuto VNP INSA",
                 url: "https://dsi.insa-lyon.fr/sites/dsi.insa-lyon.fr/files/insal_dsi_pr_vpn_ciscoanyconnect_manuel_pub_v1.0.pdf",
                 icon: "https://www.insa-lyon.fr/",
             },
             {
                 type: "link",
-                text: "Pour gérer l’argent pour les resto du CROUS",
+                text: "Izly - Crous",
                 url: "https://www.izly.fr/",
                 iconDirectUrl:
                     "https://www.izly.fr/images/favicons/favicon-32x32.png",
@@ -58,6 +52,17 @@ export const LinksList: ItemProps[] = [
                 type: "link",
                 text: "Direction des Systèmes d’Information",
                 url: "https://dsi.insa-lyon.fr/",
+            },
+            {
+                type: "link",
+                text: "Support résidences (SamFM)",
+                url: "https://www.samfm.net/samfminsa",
+            },
+            {
+                type: "link",
+                text: "Support technique (Planète INSA)",
+                url: "https://planete.insa-lyon.fr/",
+                icon: "https://www.insa-lyon.fr/",
             },
         ],
     },
@@ -85,7 +90,7 @@ export const LinksList: ItemProps[] = [
     },
     {
         type: "link",
-        text: "Envoyer des fichiers lourds made by INSA",
+        text: "Filesender made by INSA",
         url: "https://filesender.renater.fr/",
     },
     {
