@@ -86,7 +86,7 @@ export const LinksList: ItemProps[] = [
     },
     {
         type: "link",
-        text: "Site pour consulter le menu, calculer ses points pour le RI",
+        text: "INSA utils",
         url: "https://insa-utils.fr/",
     },
 ];
