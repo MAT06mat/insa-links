@@ -32,6 +32,36 @@ export const LinksList: ItemProps[] = [
         ],
     },
     {
+        type: "folder",
+        text: "Support & ressources techniques",
+        list: [
+            {
+                type: "link",
+                text: "Support technique (Planète INSA)",
+                url: "https://planete.insa-lyon.fr/",
+                icon: "https://www.insa-lyon.fr/",
+            },
+            {
+                type: "link",
+                text: "Tuto VNP INSA",
+                url: "https://dsi.insa-lyon.fr/sites/dsi.insa-lyon.fr/files/insal_dsi_pr_vpn_ciscoanyconnect_manuel_pub_v1.0.pdf",
+                icon: "https://www.insa-lyon.fr/",
+            },
+            {
+                type: "link",
+                text: "Pour gérer l’argent pour les resto du CROUS",
+                url: "https://www.izly.fr/",
+                iconDirectUrl:
+                    "https://www.izly.fr/images/favicons/favicon-32x32.png",
+            },
+            {
+                type: "link",
+                text: "Direction des Systèmes d’Information",
+                url: "https://dsi.insa-lyon.fr/",
+            },
+        ],
+    },
+    {
         type: "link",
         text: "Moodle",
         url: "https://moodle.insa-lyon.fr/",
@@ -41,22 +71,12 @@ export const LinksList: ItemProps[] = [
         type: "link",
         text: "ADE Emploi du temps",
         url: "https://ade-web.insa-lyon.fr/direct/myplanning.jsp",
+        iconDirectUrl: "https://ade-web.insa-lyon.fr/favicon.ico",
     },
     {
         type: "link",
         text: "Mails INSA",
         url: "https://zmail.insa-lyon.fr/",
-    },
-    {
-        type: "link",
-        text: "Support technique",
-        url: "https://planete.insa-lyon.fr/",
-        icon: "https://www.insa-lyon.fr/",
-    },
-    {
-        type: "link",
-        text: "Tuto VNP INSA",
-        url: "https://dsi.insa-lyon.fr/sites/dsi.insa-lyon.fr/files/insal_dsi_pr_vpn_ciscoanyconnect_manuel_pub_v1.0.pdf",
     },
     {
         type: "link",
@@ -70,19 +90,9 @@ export const LinksList: ItemProps[] = [
     },
     {
         type: "link",
-        text: "Pour gérer l’argent pour les resto du CROUS",
-        url: "https://www.izly.fr/",
-    },
-    {
-        type: "link",
         text: "Bibliothèque INSA Lyon",
         url: "https://bibliotheque.insa-lyon.fr/",
         icon: "https://www.insa-lyon.fr/",
-    },
-    {
-        type: "link",
-        text: "Direction des Systèmes d’Information",
-        url: "https://dsi.insa-lyon.fr/",
     },
     {
         type: "link",

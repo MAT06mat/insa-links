@@ -3,4 +3,5 @@ export type LinkProps = {
     text: string;
     url: string;
     icon?: string;
+    iconDirectUrl?: string;
 };
