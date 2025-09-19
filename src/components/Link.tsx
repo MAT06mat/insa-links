@@ -10,7 +10,7 @@ function Link({ text, url, icon, iconDirectUrl }: LinkProps) {
     return (
         <div className="link">
             <a href={url} target="_blank">
-                <img src={src} className="icon" />
+                <img src={src} className="icon" title={text} />
                 <div className="text">{text}</div>
             </a>
         </div>

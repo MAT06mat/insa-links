@@ -80,8 +80,20 @@ export const LinksList: ItemProps[] = [
     },
     {
         type: "link",
+        text: "ADE Outils",
+        url: "https://ade-outils.insa-lyon.fr/",
+        iconDirectUrl: "https://ade-web.insa-lyon.fr/favicon.ico",
+    },
+    {
+        type: "link",
         text: "Mails INSA",
         url: "https://zmail.insa-lyon.fr/",
+    },
+    {
+        type: "link",
+        text: "Bibliothèque INSA Lyon",
+        url: "https://bibliotheque.insa-lyon.fr/",
+        icon: "https://www.insa-lyon.fr/",
     },
     {
         type: "link",
@@ -92,12 +104,6 @@ export const LinksList: ItemProps[] = [
         type: "link",
         text: "Filesender made by INSA",
         url: "https://filesender.renater.fr/",
-    },
-    {
-        type: "link",
-        text: "Bibliothèque INSA Lyon",
-        url: "https://bibliotheque.insa-lyon.fr/",
-        icon: "https://www.insa-lyon.fr/",
     },
     {
         type: "link",
