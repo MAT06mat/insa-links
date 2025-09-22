@@ -10,7 +10,7 @@ function App() {
                 <img src="./icon.svg" alt="Falstlink icon" />
             </header>
             <section>
-                <ItemList list={LinksList} noPadding />
+                <ItemList list={LinksList} />
             </section>
             <footer>
                 Site par{" "}
