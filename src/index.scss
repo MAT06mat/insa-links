@@ -30,14 +30,14 @@ body {
     width: 100%;
     min-width: 320px;
 
-    --base-color: #161a35;
+    --base-color: #272938;
     --surface-color: oklch(from var(--base-color) calc(l * 1.2) c h);
     --secondary-surface-color: oklch(from var(--base-color) calc(l * 1.5) c h);
     --brand-color: oklch(from var(--base-color) calc(l * 3) calc(c * 5) h);
     --text-color: #f0f0f0;
     --secondary-text-color: #b0b3c0;
 
-    background-color: var(--base-color);
+    background-color: var(--surface-color);
     color: var(--text-color);
 }
 
