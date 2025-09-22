@@ -3,9 +3,6 @@
     line-height: 1.5;
     font-weight: 400;
 
-    color: #213547;
-    background-color: #ffffff;
-
     height: 100svh;
     width: 100%;
 
@@ -32,6 +29,16 @@ body {
     height: 100svh;
     width: 100%;
     min-width: 320px;
+
+    --base-color: #161a35;
+    --surface-color: oklch(from var(--base-color) calc(l * 1.2) c h);
+    --secondary-surface-color: oklch(from var(--base-color) calc(l * 1.5) c h);
+    --brand-color: oklch(from var(--base-color) calc(l * 3) calc(c * 5) h);
+    --text-color: #f0f0f0;
+    --secondary-text-color: #b0b3c0;
+
+    background-color: var(--base-color);
+    color: var(--text-color);
 }
 
 h1 {
@@ -46,17 +53,12 @@ button {
     font-size: 1em;
     font-weight: 500;
     font-family: inherit;
-    background-color: #1a1a1a;
+    color: var(--text-color);
     cursor: pointer;
     transition: border-color 0.25s;
-    background-color: #f9f9f9;
+    background-color: var(--surface-color);
 }
 
 button:hover {
-    border-color: #646cff;
-}
-
-button:focus,
-button:focus-visible {
-    outline: 4px auto #646cff;
+    border-color: var(--brand-color);
 }
