@@ -9,14 +9,14 @@ function ThemeButton() {
 
     const body = document.querySelector("body");
     body?.toggleAttribute("dark-mode", darkMode);
-
-    const metaThemeColor = document.querySelector("meta[name=theme-color]");
-    metaThemeColor?.setAttribute(
-        "content",
-        body
-            ? getComputedStyle(body).getPropertyValue("background-color")
-            : "#fff"
-    );
+    document
+        .querySelector("meta[name=theme-color]")
+        ?.setAttribute(
+            "content",
+            body
+                ? getComputedStyle(body).getPropertyValue("background-color")
+                : "#fff"
+        );
 
     return (
         <label className="theme-icon">
