@@ -13,7 +13,9 @@ function ThemeButton() {
     const metaThemeColor = document.querySelector("meta[name=theme-color]");
     metaThemeColor?.setAttribute(
         "content",
-        body?.style.backgroundColor || "#fff"
+        body
+            ? getComputedStyle(body).getPropertyValue("background-color")
+            : "#fff"
     );
 
     return (
