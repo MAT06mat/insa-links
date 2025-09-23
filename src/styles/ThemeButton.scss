@@ -1,0 +1,61 @@
+/*------ Settings ------*/
+.theme-icon {
+    --color: #a5a5b0;
+    --size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    font-size: var(--size);
+    user-select: none;
+    fill: var(--color);
+    width: var(--size);
+}
+
+.theme-icon .moon {
+    position: absolute;
+    animation: keyframes-fill 0.5s;
+}
+
+.theme-icon .sun {
+    position: absolute;
+    display: none;
+    animation: keyframes-fill 0.5s;
+}
+
+/* ------ On check event ------ */
+.theme-icon input:checked ~ .moon {
+    display: none;
+}
+
+.theme-icon input:checked ~ .sun {
+    display: block;
+}
+
+/* ------ Hide the default checkbox ------ */
+.theme-icon input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* ------ Animation ------ */
+@keyframes keyframes-fill {
+    0% {
+        transform: rotate(-360deg) scale(0);
+        opacity: 0;
+    }
+
+    75% {
+        transform: rotate(25deg);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .theme-icon {
+        --size: 1.2rem;
+    }
+}

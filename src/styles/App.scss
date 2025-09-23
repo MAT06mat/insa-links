@@ -16,20 +16,9 @@ header {
     display: flex;
     align-items: center;
     color: var(--text-color);
-    padding: 0.5rem;
+    padding: 0.5rem 2rem;
     justify-content: space-between;
-    border-bottom: 1px solid var(--secondary-surface-color);
-
-    h2 {
-        padding-left: 2rem;
-    }
-
-    img {
-        height: 2.5rem;
-        width: 2.5rem;
-        border-radius: 50%;
-        border: var(--text-color) solid 2px;
-    }
+    border-bottom: 1px solid var(--line-color);
 }
 
 section {
@@ -51,7 +40,7 @@ footer {
     width: 100%;
     text-align: left;
     background-color: var(--surface-color);
-    border-top: 1px solid var(--secondary-surface-color);
+    border-top: 1px solid var(--line-color);
 }
 
 .folder {
@@ -65,7 +54,7 @@ footer {
         border-radius: 0.5rem;
         text-align: start;
         font-weight: 400;
-        border: 1px solid var(--secondary-surface-color);
+        border: 1px solid var(--line-color);
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -91,7 +80,7 @@ footer {
             top: 0.6rem;
             content: "";
             height: calc(100% - 0.8rem);
-            border-left: var(--secondary-surface-color) solid 1px;
+            border-left: var(--line-color) solid 1px;
         }
 
         & > .item-list {
@@ -155,21 +144,15 @@ footer {
 @media screen and (max-width: 600px) {
     header {
         height: 3rem;
-
-        h2 {
-            padding-left: 1rem;
-        }
-
-        img {
-            height: 2rem;
-            width: 2rem;
-            border-radius: 50%;
-            border: #fff solid 2px;
-        }
+        padding: 0.5rem 1rem;
     }
 
     section {
         height: calc(100% - 3rem);
         padding: 0.5rem;
+    }
+
+    footer {
+        padding: 0.5rem 1rem 0 1rem;
     }
 }

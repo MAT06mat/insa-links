@@ -1,13 +1,14 @@
 import ItemList from "./components/ItemList";
 import { LinksList } from "./assets/LinksList";
-import "./App.scss";
+import ThemeButton from "./components/ThemeButton";
+import "./styles/App.scss";
 
 function App() {
     return (
         <>
             <header>
                 <h2>INSA links</h2>
-                <img src="./icon.svg" alt="Falstlink icon" />
+                <ThemeButton />
             </header>
             <section>
                 <ItemList list={LinksList} />

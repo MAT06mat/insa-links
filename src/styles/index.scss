@@ -19,7 +19,7 @@ a {
 }
 
 a:hover {
-    color: var(--secondary-brand-color);
+    color: var(--highlighted-brand-color);
 }
 
 body {
@@ -30,16 +30,24 @@ body {
     width: 100%;
     min-width: 320px;
 
-    --base-color: #272938;
-    --surface-color: oklch(from var(--base-color) calc(l * 1.2) c h);
-    --secondary-surface-color: oklch(from var(--base-color) calc(l * 1.5) c h);
+    --base-color: #fff;
+    --surface-color: #f6f8fa;
+    --line-color: #d1d9e0;
     --brand-color: #646cff;
-    --secondary-brand-color: oklch(from var(--brand-color) calc(l * 1.2) c h);
-    --text-color: #f0f0f0;
-    --secondary-text-color: #b0b3c0;
+    --highlighted-brand-color: oklch(from var(--brand-color) calc(l * 1.2) c h);
+    --text-color: #1f2328;
+    --secondary-text-color: #404150;
 
     background-color: var(--surface-color);
     color: var(--text-color);
+
+    &[dark-mode] {
+        --base-color: #272938;
+        --surface-color: oklch(from var(--base-color) calc(l * 1.2) c h);
+        --line-color: oklch(from var(--base-color) calc(l * 1.5) c h);
+        --text-color: #f0f0f0;
+        --secondary-text-color: #b0b3c0;
+    }
 }
 
 h1 {
@@ -56,10 +64,5 @@ button {
     font-family: inherit;
     color: var(--text-color);
     cursor: pointer;
-    transition: border-color 0.25s;
     background-color: var(--surface-color);
-}
-
-button:hover {
-    border-color: var(--brand-color);
 }
