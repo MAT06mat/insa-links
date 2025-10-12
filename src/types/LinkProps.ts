@@ -4,4 +4,5 @@ export type LinkProps = {
     url: string;
     icon?: string;
     iconDirectUrl?: string;
+    roundIcon?: boolean;
 };

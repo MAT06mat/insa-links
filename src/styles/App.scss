@@ -129,6 +129,10 @@ footer {
                 height: 2rem;
                 width: 2rem;
                 border-radius: 0.2rem;
+
+                &.round-icon {
+                    border-radius: 1rem;
+                }
             }
         }
     }

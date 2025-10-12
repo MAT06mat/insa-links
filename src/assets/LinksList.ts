@@ -88,6 +88,7 @@ export const LinksList: ItemProps[] = [
         type: "link",
         text: "Mails INSA",
         url: "https://zmail.insa-lyon.fr/",
+        roundIcon: true,
     },
     {
         type: "link",
