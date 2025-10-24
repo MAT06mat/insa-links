@@ -37,7 +37,7 @@ export const LinksList: ItemProps[] = [
         list: [
             {
                 type: "link",
-                text: "Site Bibliothèque INSA Lyon",
+                text: "Bibliothèque INSA Lyon",
                 url: "https://bibliotheque.insa-lyon.fr/",
                 icon: "https://www.insa-lyon.fr/",
             },
@@ -56,7 +56,7 @@ export const LinksList: ItemProps[] = [
             },
             {
                 type: "link",
-                text: "Crsico",
+                text: "Crisco",
                 url: "https://crisco4.unicaen.fr/des/",
                 roundIcon: true,
             },
@@ -64,7 +64,8 @@ export const LinksList: ItemProps[] = [
                 type: "link",
                 text: "Europresse",
                 url: "https://docelec.insa-lyon.fr/login?url=http://nouveau.europresse.com/access/ip/default.aspx?un=INSAT_3",
-                icon: "https://europresse.fr",
+                iconDirectUrl:
+                    "https://www.europresse.com/app/uploads/2023/07/favicon-europress.svg",
             },
         ],
     },
