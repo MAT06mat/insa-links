@@ -33,6 +33,43 @@ export const LinksList: ItemProps[] = [
     },
     {
         type: "folder",
+        text: "Bibliothèque INSA Lyon",
+        list: [
+            {
+                type: "link",
+                text: "Site Bibliothèque INSA Lyon",
+                url: "https://bibliotheque.insa-lyon.fr/",
+                icon: "https://www.insa-lyon.fr/",
+            },
+            {
+                type: "link",
+                text: "Universalis",
+                url: "http://docelec.insa-lyon.fr/login?url=http://www.universalis-edu.com/",
+                icon: "https://www.universalis.fr/",
+            },
+            {
+                type: "link",
+                text: "Techniques de l'ingénieur",
+                url: "http://docelec.insa-lyon.fr/login?url=https://www.techniques-ingenieur.fr/",
+                iconDirectUrl:
+                    "https://cdn.techniques-ingenieur.fr/lucy/ti/cdn.prod.v3.10.0/images/logo-eti-mobile.png",
+            },
+            {
+                type: "link",
+                text: "Crsico",
+                url: "https://crisco4.unicaen.fr/des/",
+                roundIcon: true,
+            },
+            {
+                type: "link",
+                text: "Europresse",
+                url: "https://docelec.insa-lyon.fr/login?url=http://nouveau.europresse.com/access/ip/default.aspx?un=INSAT_3",
+                icon: "https://europresse.fr",
+            },
+        ],
+    },
+    {
+        type: "folder",
         text: "Support & ressources techniques",
         list: [
             {
@@ -89,12 +126,6 @@ export const LinksList: ItemProps[] = [
         text: "Mails INSA",
         url: "https://zmail.insa-lyon.fr/",
         roundIcon: true,
-    },
-    {
-        type: "link",
-        text: "Bibliothèque INSA Lyon",
-        url: "https://bibliotheque.insa-lyon.fr/",
-        icon: "https://www.insa-lyon.fr/",
     },
     {
         type: "link",
