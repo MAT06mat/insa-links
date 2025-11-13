@@ -141,6 +141,6 @@ export const LinksList: ItemProps[] = [
     {
         type: "link",
         text: "INSA utils",
-        url: "https://insa-utils.fr/",
+        url: "https://utils.bde-insa-lyon.fr/",
     },
 ];
