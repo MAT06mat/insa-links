@@ -135,8 +135,9 @@ export const LinksList: ItemProps[] = [
     },
     {
         type: "link",
-        text: "Filesender made by INSA",
-        url: "https://filesender.renater.fr/",
+        text: "Markolla INSA",
+        url: "https://markolla.insa-lyon.fr/",
+        iconDirectUrl: "https://hedgedoc.org/icons/favicon.ico",
     },
     {
         type: "link",
