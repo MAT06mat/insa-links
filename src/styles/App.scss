@@ -29,6 +29,7 @@ section {
     overflow-y: auto;
     background-color: var(--base-color);
     scrollbar-color: var(--line-color) var(--surface-color);
+    scrollbar-gutter: stable both-edges;
 
     & > .item-list {
         padding: 0;
@@ -36,7 +37,7 @@ section {
 }
 
 footer {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1rem 0.8rem 1rem;
     width: 100%;
     text-align: left;
     background-color: var(--surface-color);
@@ -154,6 +155,7 @@ footer {
 
     section {
         padding: 0.5rem;
+        scrollbar-gutter: initial;
     }
 
     footer {
