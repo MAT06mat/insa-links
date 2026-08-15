@@ -143,5 +143,6 @@ export const LinksList: ItemProps[] = [
         type: "link",
         text: "INSA utils",
         url: "https://utils.bde-insa-lyon.fr/",
+        iconDirectUrl: "https://utils.bde-insa-lyon.fr/icons/icon-256.png",
     },
 ];
