@@ -102,6 +102,12 @@ export const LinksList: ItemProps[] = [
                 url: "https://planete.insa-lyon.fr/",
                 icon: "https://www.insa-lyon.fr/",
             },
+            {
+                type: "link",
+                text: "Factures Hébergement et Restauration",
+                url: "https://paiement.insa-lyon.fr/",
+                icon: "https://www.insa-lyon.fr/",
+            },
         ],
     },
     {
@@ -126,6 +132,7 @@ export const LinksList: ItemProps[] = [
         type: "link",
         text: "Mails INSA",
         url: "https://zmail.insa-lyon.fr/",
+        iconDirectUrl: "https://zmail.insa-lyon.fr/img/logo/favicon.ico",
         roundIcon: true,
     },
     {
