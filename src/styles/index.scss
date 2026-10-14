@@ -1,68 +1,129 @@
 :root {
-    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     line-height: 1.5;
     font-weight: 400;
-
-    height: 100svh;
-    width: 100%;
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    /* Base theme variables (Clean & handcrafted Light mode) */
+    --base-color: #f6f8fa;
+    --surface-color: #ffffff;
+    --surface-color-subtle: #f0f2f5;
+    --surface-color-card: #ffffff;
+    --surface-color-hover: #f3f5f8;
+    --line-color: #d8dee4;
+    --line-color-hover: #c0c6cf;
+
+    --brand-color: #c41e15;
+    --brand-color-hover: #a81810;
+    --brand-color-subtle: rgba(196, 30, 21, 0.08);
+
+    --text-color: #1f2328;
+    --secondary-text-color: #424a53;
+    --tertiary-text-color: #656d76;
+
+    /* Minimal, restrained elevation */
+    --shadow-modal: 0 12px 28px rgba(0, 0, 0, 0.12);
+
+    /* Phone mode tiles */
+    --folder-squircle-bg: #eef1f5;
+    --folder-squircle-border: #d8dee4;
+
+    --modal-backdrop: rgba(15, 23, 42, 0.45);
+    --modal-bg: #ffffff;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+body {
+    background-color: var(--base-color);
+    color: var(--text-color);
+    min-width: 320px;
+    transition: background-color 0.15s ease, color 0.15s ease;
+
+    &[dark-mode] {
+        --base-color: #0d1117;
+        --surface-color: #161b22;
+        --surface-color-subtle: #21262d;
+        --surface-color-card: #161b22;
+        --surface-color-hover: #262c36;
+        --line-color: #30363d;
+        --line-color-hover: #484f58;
+
+        --brand-color: #f85149;
+        --brand-color-hover: #ff7b72;
+        --brand-color-subtle: rgba(248, 81, 73, 0.12);
+
+        --text-color: #f0f6fc;
+        --secondary-text-color: #c9d1d9;
+        --tertiary-text-color: #8b949e;
+
+        --shadow-modal: 0 16px 36px rgba(0, 0, 0, 0.5);
+
+        --folder-squircle-bg: #1c212a;
+        --folder-squircle-border: #30363d;
+
+        --modal-backdrop: rgba(0, 0, 0, 0.65);
+        --modal-bg: #161b22;
+    }
 }
 
 a {
     font-weight: 500;
     color: var(--brand-color);
-    text-decoration: inherit;
-}
+    text-decoration: none;
+    transition: color 0.15s ease;
 
-a:hover {
-    color: var(--highlighted-brand-color);
-}
-
-body {
-    margin: 0;
-    display: flex;
-    place-items: center;
-    height: 100svh;
-    width: 100%;
-    min-width: 320px;
-
-    --base-color: #fff;
-    --surface-color: #f6f8fa;
-    --line-color: #d1d9e0;
-    --brand-color: #646cff;
-    --highlighted-brand-color: oklch(from var(--brand-color) calc(l * 1.2) c h);
-    --text-color: #1f2328;
-    --secondary-text-color: #404150;
-
-    background-color: var(--surface-color);
-    color: var(--text-color);
-
-    &[dark-mode] {
-        --base-color: #272938;
-        --surface-color: oklch(from var(--base-color) calc(l * 1.2) c h);
-        --line-color: oklch(from var(--base-color) calc(l * 1.5) c h);
-        --text-color: #f0f0f0;
-        --secondary-text-color: #b0b3c0;
+    &:hover {
+        color: var(--brand-color-hover);
     }
 }
 
-h1 {
-    font-size: 3.2em;
-    line-height: 1.1;
+button {
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    color: inherit;
+    transition: all 0.15s ease;
+
+    &:focus-visible {
+        outline: 2px solid var(--brand-color);
+        outline-offset: 2px;
+    }
 }
 
-button {
-    border-radius: 8px;
-    border: 1px solid transparent;
-    padding: 0.6em 1.2em;
-    font-size: 1em;
-    font-weight: 500;
-    font-family: inherit;
-    color: var(--text-color);
-    cursor: pointer;
-    background-color: var(--surface-color);
+/* Custom discreet scrollbar */
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--line-color);
+    border-radius: 4px;
+
+    &:hover {
+        background-color: var(--line-color-hover);
+    }
 }

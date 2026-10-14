@@ -1,19 +1,32 @@
 import type { LinkProps } from "../types/LinkProps";
+import LinkIcon from "./LinkIcon";
+import ExternalLinkIcon from "../assets/svg/ExternalLinkIcon";
 
 function Link({ text, url, icon, iconDirectUrl, roundIcon }: LinkProps) {
-    const src =
-        iconDirectUrl ||
-        `https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&url=${
-            icon || url
-        }&size=32`;
-
-    const iconClassName = "icon" + (roundIcon ? " round-icon" : "");
-
     return (
         <div className="link">
-            <a href={url} target="_blank">
-                <img src={src} className={iconClassName} title={text} />
+            <a
+                href={url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="link-card"
+                title={text}
+            >
+                <div className="link-icon-wrapper">
+                    <LinkIcon
+                        url={url}
+                        text={text}
+                        icon={icon}
+                        iconDirectUrl={iconDirectUrl}
+                        roundIcon={roundIcon}
+                        size={48}
+                        className="link-main-icon"
+                    />
+                </div>
                 <div className="text">{text}</div>
+                <div className="link-external-hint">
+                    <ExternalLinkIcon />
+                </div>
             </a>
         </div>
     );

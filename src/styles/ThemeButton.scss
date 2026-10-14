@@ -1,27 +1,37 @@
 /*------ Settings ------*/
 .theme-icon {
-    --color: #a5a5b0;
-    --size: 1.5rem;
-    display: flex;
+    --size: 1.05rem;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     position: relative;
     cursor: pointer;
     font-size: var(--size);
     user-select: none;
-    fill: var(--color);
-    width: var(--size);
+    fill: var(--secondary-text-color);
+    width: 2.1rem;
+    height: 2.1rem;
+    border-radius: 6px;
+    background-color: var(--surface-color-subtle);
+    border: 1px solid var(--line-color);
+    transition: all 0.15s ease;
+
+    &:hover {
+        background-color: var(--surface-color);
+        border-color: var(--line-color-hover);
+        fill: var(--brand-color);
+    }
 }
 
 .theme-icon .moon {
     position: absolute;
-    animation: keyframes-fill 0.5s;
+    animation: keyframes-fill 0.25s ease-out;
 }
 
 .theme-icon .sun {
     position: absolute;
     display: none;
-    animation: keyframes-fill 0.5s;
+    animation: keyframes-fill 0.25s ease-out;
 }
 
 /* ------ On check event ------ */
@@ -42,20 +52,23 @@
     width: 0;
 }
 
-/* ------ Animation ------ */
+/* ------ Clean Animation ------ */
 @keyframes keyframes-fill {
     0% {
-        transform: rotate(-360deg) scale(0);
+        transform: scale(0.7);
         opacity: 0;
     }
 
-    75% {
-        transform: rotate(25deg);
+    100% {
+        transform: scale(1);
+        opacity: 1;
     }
 }
 
 @media screen and (max-width: 600px) {
     .theme-icon {
-        --size: 1.2rem;
+        width: 1.95rem;
+        height: 1.95rem;
+        --size: 0.95rem;
     }
 }
